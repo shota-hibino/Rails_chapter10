@@ -8,7 +8,7 @@ class TodolistsController < ApplicationController
     list = List.new(list_params)
     # ２. データをデータベースに保存するためのsaveメソッド実行
     list.save
-    # ３. 詳細画面へリダイレクト.
+    # ３. 詳細画面へリダイレクト
     redirect_to todolist_path(list.id)
   end
 

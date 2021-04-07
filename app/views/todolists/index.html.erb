@@ -2,5 +2,7 @@
   <!-- ループ処理(投稿データの数だけ繰り返す)-->
 <% @lists.each do |list| %>
   <p>タイトル</p>
-  <span><%= list.title %></span>
+  <span>
+    <%= link_to list.title, todolist_path(list.id) %>
+  </span>
 <% end %>
